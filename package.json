@@ -16,5 +16,13 @@
     "prettier-plugin-solidity": "^1.0.0-dev.23",
     "solhint": "^3.3.7",
     "solidity-coverage": "^0.7.21"
+  },
+  "scripts": {
+    "moralis:sync": "moralis-admin-cli connect-local-devchain --chain hardhat --moralisSubdomain weieegbtzct1.usemoralis.com:2053 --frpcPath ./frp/frpc",
+    "moralis:cloud":"moralis-admin-cli watch-cloud-folder --moralisSubdomain weieegbtzct1.usemoralis.com --autoSave 1 --moralisCloudfolder ./cloudFunctions"
+
+  },
+  "dependencies": {
+    "moralis": "^1.11.0"
   }
 }
