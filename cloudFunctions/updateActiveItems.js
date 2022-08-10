@@ -33,10 +33,10 @@ Moralis.Cloud.afterSave("ItemListed", async (request) => {
                     "tokenId"
                 )}`
             )
-            logger.info("saving...")
+            logger.info(" saving...")
             await activeItem.save()
         }
-    }
+    } 
 })
 
 Moralis.Cloud.afterSave("ItemCancelled", async (request) => {
